@@ -5,9 +5,9 @@ import java.util.ArrayList;
 
 public class AOPTBANDC {
 	public static void aoptbandc() throws IOException{
-		FileWriter fileWritter = new FileWriter("/home/szy/t3-c",true);
+		FileWriter fileWritter = new FileWriter("/home/szy/data/t3-c",true);
 		int count=0;
-		while(++count<100){
+		while(++count<200){
 			String line="SELECT ?x ?y ?z ?w WHERE {{?x <ub:teacherOf> ?y.} OPTIONAL {?x <ub:mastersDegreeFrom> ?z. ?x <ub:undergraduateDegreeFrom> ?w.} }";
 			ArrayList<String> list1=new ArrayList<String>();
 			list1.add("<rdf:type>");

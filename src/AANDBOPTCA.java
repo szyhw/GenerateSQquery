@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class AANDBOPTCA	{
 	public static void aandboptc() throws IOException{
 		int count=0;
-		FileWriter fileWritter = new FileWriter("/home/szy/t4-c",true);
-		while(++count<100){
+		FileWriter fileWritter = new FileWriter("/home/szy/data/t4-c",true);
+		while(++count<200){
 			String line="SELECT ?x ?y ?z ?w WHERE {{?x <ub:emailAddress> ?y.}{{?x <ub:telephone> ?z.} OPTIONAL {?x <rdf:type> ?w.}}}";
 			ArrayList<String> list1=new ArrayList<String>();
 			list1.add("<rdf:type>");

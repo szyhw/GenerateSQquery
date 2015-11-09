@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class AOPTBANDCA {
 	public static void aoptbandca() throws IOException {
 		int count=0;
-		FileWriter fileWritter = new FileWriter("/home/szy/t5-c",true);
-		while(++count<100){
+		FileWriter fileWritter = new FileWriter("/home/szy/data/t5-c",true);
+		while(++count<200){
 			String line="SELECT ?x ?y ?z WHERE {{{?x <ub:emailAddress> ?y.} OPTIONAL {?x <ub:telephone> ?z.}}{?x <rdf:type> <ub:AssistantProfessor>.}}";
 			ArrayList<String> list1=new ArrayList<String>();
 			list1.add("<rdf:type>");
